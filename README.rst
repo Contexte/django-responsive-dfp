@@ -20,7 +20,7 @@ add the plugin to ``INSTALLED_APPS``::
 
     INSTALLED_APPS = (
         ...
-        'dfp', 
+        'dfp',
         ...
     )
 
@@ -40,7 +40,7 @@ define settings for your dfp slots
               "sizes" : ((640,120),)
             }
           ]
-        } 
+        }
     }
 
 Usage
@@ -50,7 +50,11 @@ In your templates, you need to load ``dfp``:
 
     ...
     {% load dfp %}
-    ... 
+    ...
+
+and load google gpt.js dfp library via a script tag:
+
+    <script src="https://www.googletagservices.com/tag/js/gpt.js" type="text/javascript"></script>
 
 then you simply call the tag with the slot name
 
